@@ -1,6 +1,6 @@
 <?php
 include "config.php";
-$conn->query("SELECT * FROM rsh_admin");
+$query = mysqli_query($conn,"SELECT * FROM rsh_admin ORDER BY id DESC");
 ?>
 <form action="" method="post">
     <table border="1" cellpadding="0" cellspacing="0">
